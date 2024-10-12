@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5CACA"
+    android:backgroundTint="#D5CACA"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-69dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D5CACA"
+                android:backgroundTint="#D5CACA"
+                android:backgroundTintMode="multiply"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/green_foliage_pattern_frame_vector" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/agbalumo"
+                        android:padding="16.5dp"
+                        android:text="30 Days of Wellness"
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="cursive"
+                        android:text="by:Jharawell Bravo"
+                        android:textAlignment="center" />
+
+
+                </FrameLayout>
+
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#D5CACA"
+                    android:backgroundTint="#D5CACA"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day1"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 1: Meditation"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day1image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView1"
+                            app:layout_constraintStart_toStartOf="@+id/cardView1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                        <ImageView
+                            android:id="@+id/day1image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.56"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day1_meditation" />
+
+                        <TextView
+                            android:id="@+id/desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 1 introduces mindfulness meditation by focusing on my breath to cultivate calm and presence."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day1image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day2"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 2: Read Books"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day2image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                            app:layout_constraintStart_toStartOf="@+id/cardView2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                        <ImageView
+                            android:id="@+id/day2image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day2_read" />
+
+                        <TextView
+                            android:id="@+id/desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 2: Pick a time each day to enjoy some quiet reading.Start with just a few minutes and let the habit grow naturally."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day2image"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:id="@+id/day3"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 3: Exercise"
+
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day3image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView3"
+                            app:layout_constraintStart_toStartOf="@+id/cardView3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day3image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day3_exercise" />
+
+                        <TextView
+                            android:id="@+id/desc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 3: Get moving with a simple exercise routine today. Even a short walk or stretching can boost my energy and mood."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day3image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day4"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 4: Stroll in a Park"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day4image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView4"
+                            app:layout_constraintStart_toStartOf="@+id/cardView4"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day4image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day4_strolling" />
+
+                        <TextView
+                            android:id="@+id/desc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 4: Take a relaxing stroll in the park today. Enjoy the fresh air and let nature refresh my mind and body."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day4image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day5"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 5: Cook my favorite food"
+                            android:textAlignment="center"
+
+                            app:layout_constraintBottom_toTopOf="@+id/day5image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView5"
+                            app:layout_constraintStart_toStartOf="@+id/cardView5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day5image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day5_cook" />
+
+                        <TextView
+                            android:id="@+id/desc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 5: Today, I’m cooking my favorite meal. I’m taking my time, enjoying the process, and can’t wait to dig in!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day5image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day6"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 6: Study"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day6image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView6"
+                            app:layout_constraintStart_toStartOf="@+id/cardView6"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day6image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day6_study" />
+
+                        <TextView
+                            android:id="@+id/desc6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 6: I’m dedicating some time today to study. I’ll find a cozy spot, focus, and enjoy the journey of learning something new."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day6image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day7"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 7: Clean the house"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day7image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView7"
+                            app:layout_constraintStart_toStartOf="@+id/cardView7"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day7image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day7_cleaninghouse" />
+
+                        <TextView
+                            android:id="@+id/desc7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 7: Today, I’m tackling some cleaning around the house. It feels great to declutter my space and create a fresh, inviting environment!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day7image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day8"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 8: Journaling"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day8image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView8"
+                            app:layout_constraintStart_toStartOf="@+id/cardView8"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day8image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day8_journaling" />
+
+                        <TextView
+                            android:id="@+id/desc8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 8: I’m taking time today to journal my thoughts and feelings. It’s a chance to reflect and connect with myself on a deeper level."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day8image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day9"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 9: Sun Viewing"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day9image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView9"
+                            app:layout_constraintStart_toStartOf="@+id/cardView9"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day9image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day9_sunviewing" />
+
+                        <TextView
+                            android:id="@+id/desc9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 9: Today, I’m enjoying some time in the sun. I’ll soak up the warmth and let its light brighten my mood."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day9image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day10"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 10: Jogging"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day10image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView10"
+                            app:layout_constraintStart_toStartOf="@+id/cardView10"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day10image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day10_jogging" />
+
+                        <TextView
+                            android:id="@+id/desc10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 10: I’m going for a jog today to clear my mind and get my blood pumping. It’s a refreshing way to boost my energy and enjoy the outdoors!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day10image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#EBDBDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D5CACA"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day11"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 11: Watch my favorite TV shows"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day11image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView11"
+                            app:layout_constraintStart_toStartOf="@+id/cardView11"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day11image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day11_watchtv" />
+
+                        <TextView
+
+                            android:id="@+id/desc11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text= "Day 11: Today, I’m unwinding by binge-watching my favorite TV shows. It’s the perfect way to relax and enjoy some good stories!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day11image"
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day12"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 12: Outside shopping"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day12image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                            app:layout_constraintStart_toStartOf="@+id/cardView12"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day12image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day12_shop" />
+
+                        <TextView
+                            android:id="@+id/desc12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 12: I’m heading out for some outdoor shopping today. I’ll enjoy the fresh air while exploring and finding a few treats for myself!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day12image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day13"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 13: Eat healthy foods"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day13image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView13"
+                            app:layout_constraintStart_toStartOf="@+id/cardView13"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day13image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day13" />
+
+                        <TextView
+                            android:id="@+id/desc13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 13: Today, I’m focusing on eating healthy foods. I’ll savor vibrant fruits and veggies, nourishing my body with every bite!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day13image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day14"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 14: Learn new things "
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day14image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView14"
+                            app:layout_constraintHorizontal_bias="0.833"
+                            app:layout_constraintStart_toStartOf="@+id/cardView14"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day14image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day14_learn" />
+
+                        <TextView
+                            android:id="@+id/desc14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 14: Today, I’m diving into something new and exciting. Whether it’s a skill or a topic, I can’t wait to expand my horizons!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day14image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day15"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 15: Spend time with my family"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day15image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView15"
+                            app:layout_constraintStart_toStartOf="@+id/cardView15"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day15image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day15_family" />
+
+                        <TextView
+                            android:id="@+id/desc15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 15: Today is all about family! I’m excited to spend quality time with my loved ones, sharing laughs and creating new memories together."
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day15image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day16"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 16: Take picture of scenery"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day16image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView16"
+                            app:layout_constraintStart_toStartOf="@+id/cardView16"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day16image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day16_takepictures" />
+
+                        <TextView
+                            android:id="@+id/desc16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 16: Today, I’m capturing the beauty around me by taking pictures of the scenery. It’s a lovely way to appreciate nature and preserve these moments!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day16image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day17"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 17: Donate in small organizations"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day17image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView17"
+                            app:layout_constraintStart_toStartOf="@+id/cardView17"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day17image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day17_volunteer" />
+
+                        <TextView
+                            android:id="@+id/desc17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 17: Today, I'm donating things I no longer use to small organizations. It feels great to declutter and help others in my community!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day17image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day18"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 18: Spend time with friends"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day18image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView18"
+                            app:layout_constraintStart_toStartOf="@+id/cardView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day18image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day18_friends" />
+
+                        <TextView
+                            android:id="@+id/desc18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 18: I’m spending time with friends today, enjoying laughter and good company. It's the perfect way to recharge and create happy memories!"
+                            android:fontFamily="@font/acme"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day18image" />
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day19"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 19: Rest and Sleep for 8-10 hours"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day19image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                            app:layout_constraintStart_toStartOf="@+id/cardView19"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day19image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day19_sleep" />
+
+                        <TextView
+                            android:id="@+id/desc19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 19: I’m prioritizing rest today, aiming for 8 to 10 hours of sleep. It’s time to recharge and give my body the break it deserves!"
+                            android:fontFamily="@font/acme"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day19image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day20"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 20: Explore interesting and new things "
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day20image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView20"
+                            app:layout_constraintStart_toStartOf="@+id/cardView20"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day20image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day20_explore" />
+
+                        <TextView
+                            android:id="@+id/desc20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 20: I’m setting out to explore new and interesting things today. Whether it’s a new hobby or a hidden gem in my area, I’m excited to discover what’s out there!"
+                            android:fontFamily="@font/acme"
+                            android:textAlignment="center"
+                            android:textSize="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day20image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day21"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 21: Gain knowledge through online resources "
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            android:textSize="13.5dp"
+                            app:layout_constraintBottom_toTopOf="@+id/day21image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView21"
+                            app:layout_constraintStart_toStartOf="@+id/cardView21"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day21image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day21_online" />
+
+                        <TextView
+                            android:id="@+id/desc21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 21: I’m diving into new knowledge today by exploring online resources like articles or videos. Whether it’s learning about photography techniques or mastering a new recipe, I can’t wait to expand my horizons!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day21image"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#D5CACA"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:id="@+id/day22"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 22: Visit new places"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day22image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView22"
+                            app:layout_constraintStart_toStartOf="@+id/cardView22"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day22image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day22_visit" />
+
+                        <TextView
+                            android:id="@+id/desc22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 22: I’m off to explore new places today that I haven’t visited yet. It’s exciting to discover fresh sights and create new memories!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day22image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day23"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 23: Attend different parties "
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day23image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView23"
+                            app:layout_constraintStart_toStartOf="@+id/cardView23"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day23image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day23_party" />
+
+                        <TextView
+                            android:id="@+id/desc23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 23: I’m attending a birthday party today, ready to celebrate with friends and enjoy some fun moments. It’s a great way to connect and create lasting memories!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day23image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day24"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 24: Mountain hike"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day24image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView24"
+                            app:layout_constraintStart_toStartOf="@+id/cardView24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day24image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day24_hike" />
+
+                        <TextView
+                            android:id="@+id/desc24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 24: I’m going for a mountain hike today to connect with nature. I can't wait to enjoy the fresh air and stunning views along the trail!"
+                            android:fontFamily="@font/acme"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day24image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day25"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 25: Play different board games
+                             with loved ones "
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day25image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView25"
+                            app:layout_constraintStart_toStartOf="@+id/cardView25"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/day25image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day25_boardgames" />
+
+                        <TextView
+                            android:id="@+id/desc25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 25: Today, I’m playing board games with my loved ones. It’s a wonderful way to laugh, bond, and create some friendly competition!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day25image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day261"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 26: Create new music playlist"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day26image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView26"
+                            app:layout_constraintStart_toStartOf="@+id/cardView26"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day26image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day26_playlist" />
+
+                        <TextView
+                            android:id="@+id/desc26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 26: I’m curating a new music playlist that matches my mood today. It’ll be a fun way to express myself and vibe with some fresh tunes!"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day26image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day27"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 27: Experiment a new food recipe"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day27image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView27"
+                            app:layout_constraintStart_toStartOf="@+id/cardView27"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day27image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day27_recipe" />
+
+                        <TextView
+                            android:id="@+id/desc27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 27: Today, I’m experimenting in the kitchen to create a new recipe. I love the thrill of trying new flavors and seeing what delicious dish I can come up with!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day27image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day28"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Day 28: Water plants in our garden"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/day28image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView28"
+                            app:layout_constraintStart_toStartOf="@+id/cardView28"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day28image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day28_gardening" />
+
+                        <TextView
+                            android:id="@+id/desc28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 28: I’m watering the plants in my garden today. It’s so satisfying to nurture them and watch them thrive!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day28image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day29"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="5dp"
+                            android:text="Day 29: Journalize"
+                            android:textAlignment="center"
+
+                            app:layout_constraintBottom_toTopOf="@+id/day29image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView29"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/cardView29"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/day29image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.482"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.426"
+                            app:srcCompat="@drawable/day29_diary" />
+
+                        <TextView
+                            android:id="@+id/desc29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 29: I’m taking time to journal about everything I’ve done in the past few days. Reflecting on these moments will help me cherish the memories and see how far I’ve come!"
+                            android:fontFamily="@font/acme"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day29image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardBackgroundColor="#D5CACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#975656"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/day30"
+                            android:layout_width="407dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="Day 30: Reflect"
+                            app:layout_constraintBottom_toTopOf="@+id/day30image"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView30"
+                            app:layout_constraintStart_toStartOf="@+id/cardView30"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/day30image"
+                            android:layout_width="251dp"
+                            android:layout_height="174dp"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.471"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/day30_reflect" />
+
+                        <TextView
+                            android:id="@+id/desc30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acme"
+                            android:text="Day 30: Today, I’m reflecting on my journey over the past 30 days. I’ve embraced mindfulness, explored new activities, and nurtured my well-being. This experience has taught me the importance of self-care and staying present in each moment!"
+                            android:textAlignment="center"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/day30image"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
