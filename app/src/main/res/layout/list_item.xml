@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="43dp"
+    android:background="#D5CACA"
+    android:backgroundTint="#D5CACA"
+    android:backgroundTintMode="multiply">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:clickable="true"
+        android:elevation="70dp"
+        app:cardBackgroundColor="#DED4D4"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/day_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Day 1: Meditation"
+                android:textAlignment="center"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/day_image"
+                android:layout_width="277dp"
+                android:layout_height="159dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/day1_meditation" />
+
+            <TextView
+                android:id="@+id/day_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="Day 1 introduces mindfulness meditation by focusing on my breath to cultivate calm and presence."
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
